@@ -2,6 +2,8 @@ package com.example.shopingapp.ui.home.fragment
 
 import android.os.Bundle
 import android.view.View
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import com.example.shopingapp.R
 import com.example.shopingapp.base.BaseBindingFragment
 import com.example.shopingapp.data.model.MainCategoryModel
@@ -16,6 +18,8 @@ class HomeFragment : BaseBindingFragment<FragmentHomeBinding>(), HomeListner {
 
     override fun layoutId(): Int = R.layout.fragment_home
 
+    private var navController: NavController? = null
+
     override fun initializeBinding(binding: FragmentHomeBinding) {
         binding.lifecycleOwner = this
         binding.viewmodel = viewmodel
@@ -24,10 +28,11 @@ class HomeFragment : BaseBindingFragment<FragmentHomeBinding>(), HomeListner {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        navController = view.findNavController()
     }
 
-    override fun openSubCategory(model: MainCategoryModel) {
-
+    override fun openSubCategory(model: MainCategoryModel.Data) {
+        val action = HomeFragmentDirections.actionHomeFragmentToSubCategoryFragment(model.itemCategoryCode)
+        navController?.navigate(action)
     }
 }

@@ -9,6 +9,18 @@
         android:id="@+id/homeFragment"
         android:name="com.example.shopingapp.ui.home.fragment.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home"/>
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_subCategoryFragment"
+            app:destination="@id/subCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subCategoryFragment"
+        android:name="com.example.shopingapp.ui.subcategory.SubCategoryFragment"
+        android:label="SubCategoryFragment" >
+        <argument
+            android:name="categoryCode"
+            app:argType="string" />
+    </fragment>
 
 </navigation>

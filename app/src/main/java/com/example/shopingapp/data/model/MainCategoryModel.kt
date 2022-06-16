@@ -19,7 +19,7 @@ data class MainCategoryModel(
         @SerializedName("imagefile")
         val imagefile: String = "",
         @SerializedName("ItemCategoryCode")
-        val itemCategoryCode: Int = 0,
+        val itemCategoryCode: String = "",
         @SerializedName("ItemCategoryName")
         val itemCategoryName: String = ""
     )

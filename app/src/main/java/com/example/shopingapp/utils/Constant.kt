@@ -31,7 +31,9 @@ class Constant {
         const val ERROR = "error"
 
         const val REQUEST_MAIN_CATEGORY = "getallactivecategory"
+        const val REQUEST_GETSUBCATEGORYLIST = "getsubcategorylist"
         const val REQUEST_USERID = "userid"
         const val REQUEST_MODE = "Mode"
+        const val REQUEST_ITEMCATEGORYCODE = "ItemCategoryCode"
     }
 }

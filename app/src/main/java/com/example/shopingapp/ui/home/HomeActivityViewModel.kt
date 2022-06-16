@@ -12,11 +12,6 @@ class HomeActivityViewModel @Inject constructor(
     private val prefUtils: PrefUtils
 ) : AndroidViewModel(application) {
 
-
     private val _onMessageError = MutableLiveData<Any>()
     val onMessageError: LiveData<Any> get() = _onMessageError
-
-    private val _cartCount = MutableLiveData<String>()
-    val cartCount: LiveData<String> get() = _cartCount
-
 }

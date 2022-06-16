@@ -7,10 +7,10 @@
         <import type="android.view.View" />
         <variable
             name="viewmodel"
-            type="com.example.shopingapp.ui.home.fragment.HomeViewModel" />
+            type="com.example.shopingapp.ui.subcategory.SubCategoryViewModel" />
         <variable
             name="listner"
-            type="com.example.shopingapp.ui.home.fragment.HomeFragment" />
+            type="com.example.shopingapp.ui.subcategory.SubCategoryFragment" />
     </data>
 
     <RelativeLayout
@@ -18,19 +18,15 @@
         android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
-            bindMainCategory="@{viewmodel.mainCategory}"
-            homelistner="@{listner}"
+            bindSubCategory="@{viewmodel.subcategories}"
+            subcategoryListner="@{listner}"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="0dp"
             android:paddingLeft="@dimen/_5sdp"
             android:paddingRight="@dimen/_5sdp"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
-            tools:listitem="@layout/adapter_main_category" />
+            tools:listitem="@layout/adapter_sub_category"/>
 
     </RelativeLayout>
 
