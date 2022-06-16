@@ -28,9 +28,7 @@ android {
         }
 
         debug {
-            //buildConfigField "String", "BUYER_BASE_URL", "\"https://v8uqx3vr90.execute-api.ap-south-1.amazonaws.com/\""
-            buildConfigField "String", "BUYER_BASE_URL", "\"https://apibuyamia.fahm-technologies.com/\""
-            buildConfigField "String", "SELLER_BASE_URL", "\"https://seller.buyamia.fahm-technologies.com/\""
+            buildConfigField "String", "BASE_URL", "\"http://103.240.90.81:8101/api/\""
         }
 
     }

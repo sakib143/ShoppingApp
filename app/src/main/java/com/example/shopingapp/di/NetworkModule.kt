@@ -30,7 +30,7 @@ class NetworkModule {
     /**
      * final variable having Base Server URL of project
      * */
-    private val mBaseUrl = BuildConfig.BUYER_BASE_URL
+    private val mBaseUrl = BuildConfig.BASE_URL
 
     /**
      * Gives OkHttpClient
@@ -67,11 +67,11 @@ class NetworkModule {
      */
     class RequestTokenInterceptor(private val prefUtils: PrefUtils) : Interceptor {
 
-        var host = BuildConfig.BUYER_BASE_URL.toHttpUrlOrNull()
+        var host = BuildConfig.BASE_URL.toHttpUrlOrNull()
 
         @Throws(IOException::class)
         override fun intercept(chain: Interceptor.Chain): Response {
-            host = BuildConfig.BUYER_BASE_URL.toHttpUrlOrNull()
+//            host = BuildConfig.BUYER_BASE_URL.toHttpUrlOrNull()
 //            if (prefUtils.isBuyerBaseUrl()) {
 //                host = BuildConfig.BUYER_BASE_URL.toHttpUrlOrNull()
 //            } else {

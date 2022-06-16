@@ -4,10 +4,12 @@ import android.os.Bundle
 import android.view.View
 import com.example.shopingapp.R
 import com.example.shopingapp.base.BaseBindingFragment
+import com.example.shopingapp.data.model.MainCategoryModel
 import com.example.shopingapp.databinding.FragmentHomeBinding
+import com.example.shopingapp.listner.HomeListner
 import javax.inject.Inject
 
-class HomeFragment : BaseBindingFragment<FragmentHomeBinding>() {
+class HomeFragment : BaseBindingFragment<FragmentHomeBinding>(), HomeListner {
 
     @Inject
     lateinit var viewmodel: HomeViewModel
@@ -17,11 +19,15 @@ class HomeFragment : BaseBindingFragment<FragmentHomeBinding>() {
     override fun initializeBinding(binding: FragmentHomeBinding) {
         binding.lifecycleOwner = this
         binding.viewmodel = viewmodel
-        binding.lifecycleOwner = this
+        binding.listner = this
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+    }
+
+    override fun openSubCategory(model: MainCategoryModel) {
 
     }
 }
