@@ -17,9 +17,12 @@
     <fragment
         android:id="@+id/subCategoryFragment"
         android:name="com.example.shopingapp.ui.subcategory.SubCategoryFragment"
-        android:label="SubCategoryFragment" >
+        android:label="Choose {name}">
         <argument
             android:name="categoryCode"
+            app:argType="string" />
+        <argument
+            android:name="name"
             app:argType="string" />
     </fragment>
 

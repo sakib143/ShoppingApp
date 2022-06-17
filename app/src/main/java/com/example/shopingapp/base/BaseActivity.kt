@@ -66,11 +66,11 @@ abstract class BaseActivity : AppCompatActivity(), Injectable {
      * */
     private val mPermissionRequestLocation = 333
 
-    /**
-     * To get Layout Resource ID
-     * @return Layout ID
-     */
-    abstract fun layoutId(): Int
+//    /**
+//     * To get Layout Resource ID
+//     * @return Layout ID
+//     */
+//    abstract fun layoutId(): Int
 
     /**
      * this method gets called when this activity gets created
@@ -81,7 +81,7 @@ abstract class BaseActivity : AppCompatActivity(), Injectable {
         super.onCreate(savedInstanceState)
 //        Stop screenshot and Screen recording.
 //        window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
-        setContentView(layoutId())
+//        setContentView(layoutId())
     }
 
 

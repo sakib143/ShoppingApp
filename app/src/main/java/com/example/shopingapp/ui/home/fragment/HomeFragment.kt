@@ -32,7 +32,7 @@ class HomeFragment : BaseBindingFragment<FragmentHomeBinding>(), HomeListner {
     }
 
     override fun openSubCategory(model: MainCategoryModel.Data) {
-        val action = HomeFragmentDirections.actionHomeFragmentToSubCategoryFragment(model.itemCategoryCode)
+        val action = HomeFragmentDirections.actionHomeFragmentToSubCategoryFragment(model.itemCategoryCode, model.itemCategoryName)
         navController?.navigate(action)
     }
 }

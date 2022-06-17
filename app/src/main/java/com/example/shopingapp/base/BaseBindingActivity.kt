@@ -22,7 +22,7 @@ abstract class BaseBindingActivity<B : ViewDataBinding> : BaseActivity(), Inject
      * */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        inflateView(layoutId())
+//        inflateView(layoutId())
     }
 
     /**
