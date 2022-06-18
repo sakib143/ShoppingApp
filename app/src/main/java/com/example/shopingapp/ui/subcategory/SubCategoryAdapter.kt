@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.shopingapp.BR
 import com.example.shopingapp.data.model.SubCategoryModel
 import com.example.shopingapp.databinding.AdapterSubCategoryBinding
+import com.example.shopingapp.listner.SubCategoryListner
 
 class SubCategoryAdapter (
     private val context: Context,
@@ -30,7 +31,7 @@ class SubCategoryAdapter (
 
         holder.itemBinding.setVariable(BR.subCategory, model)
         holder.itemBinding.executePendingBindings()
-//        holder.itemBinding.setVariable(BR.subCategoryListner, listner as SubCategoryListner)
+        holder.itemBinding.setVariable(BR.listner, listner as SubCategoryListner)
     }
 
     class BindingViewHolder(val itemBinding: ViewDataBinding) : RecyclerView.ViewHolder(itemBinding.root)
