@@ -45,6 +45,13 @@
     <fragment
         android:id="@+id/bagFragment"
         android:name="com.example.shopingapp.ui.bag.MyBagsFragment"
-        android:label="My Bag" />
+        android:label="My Bag"
+        tools:layout="@layout/fragment_my_bags"/>
+
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.shopingapp.ui.favourite.FavouriteFragment"
+        android:label="Favourites"
+        tools:layout="@layout/fragment_favourite"/>
 
 </navigation>

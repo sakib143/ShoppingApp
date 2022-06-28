@@ -11,4 +11,10 @@
         android:icon="@drawable/ic_bags"
         android:title="@string/bag" />
 
+    <item
+        android:id="@+id/favouriteFragment"
+        android:icon="@drawable/ic_favourite"
+        android:title="@string/Favourites" />
+
+
 </menu>
