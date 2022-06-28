@@ -6,4 +6,9 @@
         android:icon="@drawable/ic_home"
         android:title="@string/home" />
 
+    <item
+        android:id="@+id/bagFragment"
+        android:icon="@drawable/ic_bags"
+        android:title="@string/bag" />
+
 </menu>

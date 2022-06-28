@@ -42,4 +42,9 @@
 
     </fragment>
 
+    <fragment
+        android:id="@+id/bagFragment"
+        android:name="com.example.shopingapp.ui.bag.MyBagsFragment"
+        android:label="My Bag" />
+
 </navigation>

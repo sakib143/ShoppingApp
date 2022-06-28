@@ -1,5 +1,6 @@
 package com.example.shopingapp.di
 
+import com.example.shopingapp.ui.bag.MyBagsFragment
 import com.example.shopingapp.ui.details.ProductDetailsFragment
 import com.example.shopingapp.ui.home.HomeActivity
 import com.example.shopingapp.ui.home.fragment.HomeFragment
@@ -37,4 +38,10 @@ abstract class ActivityBuilder {
      **/
     @ContributesAndroidInjector()
     abstract fun bindProductDetailsFragment() : ProductDetailsFragment
+
+    /**
+     * fun to bind MyBagsFragment Activity, making Injection enable
+     **/
+    @ContributesAndroidInjector()
+    abstract fun bindMyBagsFragment() : MyBagsFragment
 }
