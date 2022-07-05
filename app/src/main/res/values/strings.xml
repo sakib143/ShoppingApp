@@ -3,4 +3,11 @@
     <string name="home">Home</string>
     <string name="bag">Bag</string>
     <string name="Favourites">Favourites</string>
+    <string name="shipping">Shipping</string>
+    <string name="new_address">New Address</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="save_inquiery">Save inquiery</string>
+    <string name="notes">Notes</string>
+    <string name="submit">Submit</string>
 </resources>

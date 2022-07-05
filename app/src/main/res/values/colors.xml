@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#808080</color>
+    <color name="gray_unselect_qc_cart">#2D2E35</color>
+    <color name="titleColor">#2C2C2C</color>
+    <color name="descriptionColor">#929CA3</color>
 </resources>

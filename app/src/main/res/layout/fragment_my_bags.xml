@@ -463,6 +463,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bg_checkout_button"
             android:text="Checkout"
+            android:onClick="@{()->listner.openShippingScreen()}"
             android:textColor="@color/white"
             android:paddingTop="@dimen/_10sdp"
             android:paddingBottom="@dimen/_10sdp"

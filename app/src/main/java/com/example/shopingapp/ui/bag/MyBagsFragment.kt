@@ -7,7 +7,6 @@ import androidx.navigation.findNavController
 import com.example.shopingapp.R
 import com.example.shopingapp.base.BaseBindingFragment
 import com.example.shopingapp.databinding.FragmentMyBagsBinding
-import com.example.shopingapp.utils.toast
 import javax.inject.Inject
 
 class MyBagsFragment : BaseBindingFragment<FragmentMyBagsBinding>() {
@@ -17,8 +16,8 @@ class MyBagsFragment : BaseBindingFragment<FragmentMyBagsBinding>() {
 
     override fun layoutId(): Int = R.layout.fragment_my_bags
 
-
     private var navController: NavController? = null
+
 
     override fun initializeBinding(binding: FragmentMyBagsBinding) {
         binding.lifecycleOwner = this
@@ -33,7 +32,8 @@ class MyBagsFragment : BaseBindingFragment<FragmentMyBagsBinding>() {
 //        viewmodel.callSubCategory(categoryId)
     }
 
-    fun openBuyNow() {
-        requireActivity().toast("In progress !!! ")
+    fun openShippingScreen() {
+        val action = MyBagsFragmentDirections.actionBagFragmentToShippingFragment()
+        navController?.navigate(action)
     }
 }

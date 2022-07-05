@@ -46,12 +46,21 @@
         android:id="@+id/bagFragment"
         android:name="com.example.shopingapp.ui.bag.MyBagsFragment"
         android:label="My Bag"
-        tools:layout="@layout/fragment_my_bags"/>
+        tools:layout="@layout/fragment_my_bags">
+        <action
+            android:id="@+id/action_bagFragment_to_shippingFragment"
+            app:destination="@id/shippingFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/favouriteFragment"
         android:name="com.example.shopingapp.ui.favourite.FavouriteFragment"
         android:label="Favourites"
         tools:layout="@layout/fragment_favourite"/>
+    <fragment
+        android:id="@+id/shippingFragment"
+        android:name="com.example.shopingapp.ui.shipping.ShippingFragment"
+        android:label="ShippingFragment"
+        tools:layout="@layout/fragment_shipping"/>
 
 </navigation>

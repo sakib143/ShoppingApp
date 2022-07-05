@@ -5,6 +5,7 @@ import com.example.shopingapp.ui.details.ProductDetailsFragment
 import com.example.shopingapp.ui.favourite.FavouriteFragment
 import com.example.shopingapp.ui.home.HomeActivity
 import com.example.shopingapp.ui.home.fragment.HomeFragment
+import com.example.shopingapp.ui.shipping.ShippingFragment
 import com.example.shopingapp.ui.subcategory.SubCategoryFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -51,4 +52,10 @@ abstract class ActivityBuilder {
      **/
     @ContributesAndroidInjector()
     abstract fun bindFavouriteFragment() : FavouriteFragment
+
+    /**
+     * fun to bind ShippingFragment, making Injection enable
+     **/
+    @ContributesAndroidInjector()
+    abstract fun bindShippingFragment() : ShippingFragment
 }
