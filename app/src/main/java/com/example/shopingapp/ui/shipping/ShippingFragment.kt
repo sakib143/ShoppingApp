@@ -1,5 +1,6 @@
 package com.example.shopingapp.ui.shipping
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.navigation.NavController
@@ -7,6 +8,7 @@ import androidx.navigation.findNavController
 import com.example.shopingapp.R
 import com.example.shopingapp.base.BaseBindingFragment
 import com.example.shopingapp.databinding.FragmentShippingBinding
+import com.example.shopingapp.ui.payment.PaymentActivity
 import javax.inject.Inject
 
 class ShippingFragment : BaseBindingFragment<FragmentShippingBinding>() {
@@ -30,4 +32,8 @@ class ShippingFragment : BaseBindingFragment<FragmentShippingBinding>() {
         navController = view.findNavController()
     }
 
+    fun makePayment() {
+        val myIntent = Intent(activity, PaymentActivity::class.java)
+        startActivity(myIntent)
+    }
 }

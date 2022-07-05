@@ -3,30 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/drawable/bg_border_for_new_add.xml" value="0.152" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/drawable/bg_cardview.xml" value="0.13" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/drawable/bg_checkout_button.xml" value="0.154" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/drawable/bg_circle.xml" value="0.154" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/drawable/bg_circle_black.xml" value="0.1" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/drawable/bg_edittext.xml" value="0.154" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/drawable/bg_gray_unselect_qc_cart.xml" value="0.138" />
+        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/drawable/bg_cardview.xml" value="0.1925" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/drawable/bg_splash_customize.xml" value="0.13" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/drawable/edit_style_qc.xml" value="0.152" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/activity_home.xml" value="0.11354166666666667" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/activity_splash.xml" value="0.18" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/adapter_main_category.xml" value="0.2" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/adapter_my_bags.xml" value="0.19895833333333332" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/adapter_sub_category.xml" value="0.2" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/fragment_favourite.xml" value="0.33" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/fragment_favouritess.xml" value="0.2" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/fragment_home.xml" value="0.1125" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/fragment_my_bags.xml" value="0.2" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/fragment_product_details.xml" value="0.2" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/fragment_shipping.xml" value="0.2" />
+        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/fragment_shipping.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/fragment_sub_category.xml" value="0.2" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/nav_header_home.xml" value="0.22" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/menu/draawer_nav_menu.xml" value="0.2" />
-        <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>

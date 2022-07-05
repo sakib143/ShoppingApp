@@ -107,4 +107,8 @@ dependencies {
     //Gson library to convert custom object to String.
     implementation 'com.google.code.gson:gson:2.9.0'
 
+
+    //Razoar pay payment gateway
+    implementation('com.razorpay:checkout:1.6.20')
+
 }
