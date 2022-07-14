@@ -21,7 +21,7 @@ public class PaymentActivity extends AppCompatActivity {
         Checkout.preload(PaymentActivity.this);
 
         final Checkout co = new Checkout();
-        co.setKeyID("rzp_test_MPkN7uW6Vuosaw");
+        co.setKeyID("rzp_test_PylerkNTAxu0PZ");
 
         try {
             JSONObject options = new JSONObject();

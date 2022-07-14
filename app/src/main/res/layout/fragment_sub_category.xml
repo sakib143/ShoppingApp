@@ -16,7 +16,32 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+      <!--  <RelativeLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@color/purple_500"
+            android:orientation="horizontal">
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/search_home_background"
+                android:singleLine="true"
+                android:textColor="@color/titleColor"
+                android:textSize="@dimen/_15ssp" />
+
+            <ImageView
+                android:id="@+id/edtSearch"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_15sdp" />
+        </RelativeLayout>-->
         <androidx.recyclerview.widget.RecyclerView
             bindSubCategory="@{viewmodel.subcategories}"
             subcategoryListner="@{listner}"
@@ -24,9 +49,10 @@
             android:layout_height="match_parent"
             android:paddingLeft="@dimen/_5sdp"
             android:paddingRight="@dimen/_5sdp"
+
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
-            tools:listitem="@layout/adapter_sub_category"/>
+            tools:listitem="@layout/adapter_sub_category" />
 
     </RelativeLayout>
 
