@@ -8,6 +8,7 @@ import androidx.navigation.fragment.navArgs
 import com.example.shopingapp.R
 import com.example.shopingapp.base.BaseBindingFragment
 import com.example.shopingapp.databinding.FragmentProductDetailsBinding
+import com.example.shopingapp.ui.bag.MyBagsFragmentDirections
 import com.example.shopingapp.utils.toast
 import javax.inject.Inject
 
@@ -37,5 +38,7 @@ class ProductDetailsFragment : BaseBindingFragment<FragmentProductDetailsBinding
 
     fun openBuyNow() {
         requireActivity().toast("In progress !!! ")
+        val action = ProductDetailsFragmentDirections.actionProductDetailsFragmentToShippingFragment()
+        navController?.navigate(action)
     }
 }

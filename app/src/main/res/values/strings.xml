@@ -10,4 +10,7 @@
     <string name="save_inquiery">Save inquiery</string>
     <string name="notes">Notes</string>
     <string name="submit">Submit</string>
+
+    <string name="search_category">Search Category</string>
+    <string name="search_products">Search Products</string>
 </resources>
