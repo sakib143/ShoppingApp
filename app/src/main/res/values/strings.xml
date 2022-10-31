@@ -5,12 +5,37 @@
     <string name="Favourites">Favourites</string>
     <string name="shipping">Shipping</string>
     <string name="new_address">New Address</string>
+    <string name="order">Order</string>
+
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="save_inquiery">Save inquiery</string>
     <string name="notes">Notes</string>
     <string name="submit">Submit</string>
-
+    <string name="text_add_to_cart">Add to cart</string>
+    <string name="buynow">Buy Now</string>
     <string name="search_category">Search Category</string>
     <string name="search_products">Search Products</string>
+    <string name="stock_quantity">Stock Quantity</string>
+    <string name="hint_product_description">Product Description</string>
+    <string name="hint_product_description_detail">Introducing Urban Monkey Athleisure©. Caps designed for those who never stop playin’. Never stop trying, because life never stops teaching. Equipped with a stretchable, dry-fit and anti-bacterial sweatband, this sporty black cap will accompany you through all your hurdles!</string>
+    <string name="text_delete_product_content_description">Delete Product</string>
+    <string name="text_empty_cart">No item found in cart!</string>
+    <string name="text_subtotal">Subtotal</string>
+    <string name="text_shipping">Shipping</string>
+    <string name="text_total">Total</string>
+    <string name="text_checkout">Checkout</string>
+    <string name="text_add_address">Add Address</string>
+    <string name="checkout_lbl_product_items">Product Items</string>
+    <string name="checkout_lbl_items_receipt">Items Receipt</string>
+    <string name="lbl_payment_mode">Payment Mode</string>
+    <string name="lbl_cash_on_delivery">Cash On Delivery</string>
+    <string name="text_place_order">Place order</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_order_details">Order Details</string>
+    <string name="text_order_id">Order ID</string>
+    <string name="text_order_date">Order Date</string>
+    <string name="text_order_status">Order Status</string>
+
 </resources>

@@ -3,20 +3,52 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable-v24/drawable_button.xml" value="0.172" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable-v24/drawable_gradient_splash_background.xml" value="0.172" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable-v24/drawable_white_border_background.xml" value="0.172" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable-v24/ic_add.xml" value="0.172" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable-v24/ic_cart.xml" value="0.172" />
         <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable-v24/ic_clear.xml" value="0.172" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable-v24/ic_delete.xml" value="0.172" />
         <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable-v24/ic_star_rate.xml" value="0.172" />
         <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable-v24/search_home_background.xml" value="0.172" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable/bg_cardview.xml" value="0.1705" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable/bg_viewall.xml" value="0.1825" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable/ic_favorite_not.xml" value="0.1775" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable/ic_remove.xml" value="0.1705" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable/ic_share.xml" value="0.183" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable/ic_similar.xml" value="0.1775" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/drawable/recyclerview_divider.xml" value="0.196" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/font/quicksand.xml" value="0.284375" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/font/quicksand_bold.xml" value="0.284375" />
         <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/activity_payment.xml" value="0.24814814814814815" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/adapter_cart.xml" value="0.2" />
         <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/adapter_main_category.xml" value="0.24010416666666667" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/adapter_my_bags.xml" value="0.20863616930312098" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/adapter_product_details.xml" value="0.264" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/adapter_sub_category.xml" value="0.20863616930312098" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/adepter_product_item.xml" value="0.264" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_add_new_address.xml" value="0.20863616930312098" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_cheakout.xml" value="0.25416666666666665" />
         <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_favourite.xml" value="0.25416666666666665" />
-        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
-        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_my_bags.xml" value="0.24010416666666667" />
-        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_product_details.xml" value="0.24814814814814815" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_full_product_details.xml" value="0.2" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_my_bags.xml" value="0.2" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_my_cart.xml" value="0.176" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_order.xml" value="0.264" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_order_detail.xml" value="0.20863616930312098" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_orderdetail.xml" value="0.264" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_product_details.xml" value="0.2" />
         <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_shipping.xml" value="0.264" />
-        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_sub_category.xml" value="0.264" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/fragment_sub_category.xml" value="0.2" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/home_header.xml" value="0.2" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/image_slider_container.xml" value="0.19709277469003847" />
         <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/nav_header_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/sign.xml" value="0.20863616930312098" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/layout/slider_item.xml" value="0.20778110303548525" />
         <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/menu/draawer_nav_menu.xml" value="0.24010416666666667" />
+        <entry key="..\:/FahmTechnologies my/ShopingApp/app/src/main/res/menu/main_menu.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/drawable/bg_cardview.xml" value="0.1925" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/drawable/bg_splash_customize.xml" value="0.13" />
         <entry key="..\:/Users/syeds/OneDrive/Desktop/WorkSpace/Demo/ShopingApp/app/src/main/res/layout/activity_home.xml" value="0.11354166666666667" />

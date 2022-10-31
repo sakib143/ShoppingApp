@@ -15,34 +15,15 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <RelativeLayout
-            android:id="@+id/search_bar"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_35sdp"
-            android:background="@color/purple_500"
-            android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:background="@color/light_gray_new">
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:background="@drawable/search_home_background"
-                android:singleLine="true"
-                android:drawableStart="@drawable/ic_search"
-                android:hint="@string/search_products"
-                android:textColor="@color/titleColor"
-                android:textSize="@dimen/_15ssp" />
-
-        </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             bindSubCategory="@{viewmodel.subcategories}"
             subcategoryListner="@{listner}"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/search_bar"
             android:layout_marginTop="@dimen/_5sdp"
             android:paddingLeft="@dimen/_5sdp"
             android:paddingRight="@dimen/_5sdp"

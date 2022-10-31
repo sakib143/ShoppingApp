@@ -1,6 +1,14 @@
 package com.example.shopingapp.ui.home
 
 import android.os.Bundle
+import android.util.Log
+import android.view.Gravity
+import android.view.Menu
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.Observer
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -12,6 +20,7 @@ import com.example.shopingapp.R
 import com.example.shopingapp.base.BaseActivity
 import com.example.shopingapp.databinding.ActivityHomeBinding
 import com.example.shopingapp.databinding.NavHeaderHomeBinding
+import com.google.android.material.navigation.NavigationView
 import javax.inject.Inject
 
 class HomeActivity : BaseActivity() {
@@ -23,6 +32,10 @@ class HomeActivity : BaseActivity() {
 
     private lateinit var binding: ActivityHomeBinding
 
+    private var drawer_layout: DrawerLayout? = null
+    private var navigationDrawer: NavigationView? = null
+    private lateinit var toolBar: Toolbar
+    private lateinit var ivOpenMenu: TextView
     @Inject
     lateinit var viewmodel: HomeActivityViewModel
 
@@ -32,15 +45,26 @@ class HomeActivity : BaseActivity() {
         val view = binding.root
         setContentView(view)
 
+        ivOpenMenu = findViewById(R.id.ivOpenMenu)
+        drawer_layout = findViewById(R.id.drawer_layout)
+        navigationDrawer = findViewById(R.id.navigationDrawer)
+        toolBar = findViewById(R.id.toolBar)
+
         setSupportActionBar(binding.toolBar)
         setNavigation()
         setNavigationHeader()
+        setListner()
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp(binding.drawerLayout) || super.onSupportNavigateUp()
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
     private fun setNavigation() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
@@ -65,6 +89,15 @@ class HomeActivity : BaseActivity() {
         viewmodel.strDate.observe(this@HomeActivity, strDataObserver)
         viewmodel.getUserName()
     }
+
+    private fun setListner() {
+        ivOpenMenu.setOnClickListener {
+            setupActionBarWithNavController(navController, appBarConfiguration)
+            binding.navigationDrawer.setupWithNavController(navController)
+            drawer_layout?.openDrawer(GravityCompat.START);
+        }
+    }
+
 
     private val onUernameObservable = Observer<String> {
         navViewHeaderBinding?.username = it

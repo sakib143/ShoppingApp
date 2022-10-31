@@ -36,4 +36,13 @@ class ShippingFragment : BaseBindingFragment<FragmentShippingBinding>() {
         val myIntent = Intent(activity, PaymentActivity::class.java)
         startActivity(myIntent)
     }
+
+    fun openCheakoutScreen(){
+        val action=ShippingFragmentDirections.actionShippingFragmentToCheakoutFragment()
+        navController?.navigate(action)
+    }
+    fun AddNewAddress(){
+       /* val action=ShippingFragmentDirections.actionShippingFragmentToAddNewAddressFragment()
+        navController?.navigate(action)*/
+    }
 }

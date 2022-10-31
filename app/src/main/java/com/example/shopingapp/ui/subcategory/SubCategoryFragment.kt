@@ -12,7 +12,7 @@ import com.example.shopingapp.databinding.FragmentSubCategoryBinding
 import com.example.shopingapp.listner.SubCategoryListner
 import javax.inject.Inject
 
-class SubCategoryFragment : BaseBindingFragment<FragmentSubCategoryBinding>(), SubCategoryListner {
+class SubCategoryFragment : BaseBindingFragment<FragmentSubCategoryBinding>(),SubCategoryListner {
 
     @Inject
     lateinit var viewmodel: SubCategoryViewModel
@@ -35,9 +35,8 @@ class SubCategoryFragment : BaseBindingFragment<FragmentSubCategoryBinding>(), S
         val categoryId : String = args.categoryCode
         viewmodel.callSubCategory(categoryId)
     }
-
     override fun openSubCategory(model: SubCategoryModel.Data) {
-        val action = SubCategoryFragmentDirections.actionSubCategoryFragmentToProductDetailsFragment(model.itemCategoryName)
+        val action = SubCategoryFragmentDirections.actionSubCategoryFragmentToProductDetailsFragment(model.itemCategoryCode,model.itemCategoryName)
         navController?.navigate(action)
     }
 }

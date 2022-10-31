@@ -1,5 +1,7 @@
 package com.example.shopingapp.utils
 
+import android.app.DownloadManager
+
 /**
  * Class Contains All the Constant Values which will be used through out App
  */
@@ -35,5 +37,21 @@ class Constant {
         const val REQUEST_USERID = "userid"
         const val REQUEST_MODE = "Mode"
         const val REQUEST_ITEMCATEGORYCODE = "ItemCategoryCode"
+
+        const val REQUEST_ITEM_CATEGORY_CODE = "ItemCategoryCode"
+        const val REQUEST_GET_ITEM_LIST_BY_CATEGORY = "getitemlistbycategory"
+
+        const val REQUEST_ADD_ORDER = "addorder"
+        const val REQUEST_USER_ID = "userid"
+        const val REQUEST_QTY = "qty"
+        const val REQUEST_RATE = "rate"
+        const val REQUEST_ITEM_ID = "itemid"
+
+        const val KEY_MINSELLQUANTITY= "minSellQuantity"
+        const val KEY_ITEMID= "itemid"
+        const val KEY_NAME = "name"
+        const val KEY_BRANDNAME = "brandName"
+        const val KEY_DEFAULTMRP = "defaultMRP"
+        const val KEY_IMAGEURL = "imageName"
     }
 }

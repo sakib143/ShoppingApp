@@ -8,11 +8,14 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.shopingapp.ui.home.fragment.HomeFragment"
-        android:label="HomeFragment"
+        android:label="Home"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_subCategoryFragment"
             app:destination="@id/subCategoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_CartFragment"
+            app:destination="@id/cartFragment" />
     </fragment>
     <fragment
         android:id="@+id/subCategoryFragment"
@@ -31,28 +34,14 @@
     </fragment>
 
     <fragment
-        android:id="@+id/productDetailsFragment"
-        android:name="com.example.shopingapp.ui.details.ProductDetailsFragment"
-        android:label="ProductDetailsFragment"
-        tools:layout="@layout/fragment_product_details">
+        android:id="@+id/cartFragment"
+        android:name="com.example.shopingapp.ui.cart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_my_cart">
 
-        <argument
-            android:name="name"
-            app:argType="string" />
         <action
-            android:id="@+id/action_productDetailsFragment_to_shippingFragment"
-            app:destination="@id/shippingFragment" />
-
-    </fragment>
-
-    <fragment
-        android:id="@+id/bagFragment"
-        android:name="com.example.shopingapp.ui.bag.MyBagsFragment"
-        android:label="My Bag"
-        tools:layout="@layout/fragment_my_bags">
-        <action
-            android:id="@+id/action_bagFragment_to_shippingFragment"
-            app:destination="@id/shippingFragment" />
+            android:id="@+id/action_cartFragment_self"
+            app:destination="@id/cartFragment" />
     </fragment>
 
     <fragment
@@ -63,7 +52,77 @@
     <fragment
         android:id="@+id/shippingFragment"
         android:name="com.example.shopingapp.ui.shipping.ShippingFragment"
-        android:label="ShippingFragment"
-        tools:layout="@layout/fragment_shipping"/>
+        android:label="Shipping"
+        tools:layout="@layout/fragment_shipping">
+        <action
+            android:id="@+id/action_shippingFragment_to_cheakoutFragment"
+            app:destination="@id/cheakoutFragment" />
 
+    </fragment>
+
+    <fragment
+        android:id="@+id/cheakoutFragment"
+        android:name="com.example.shopingapp.ui.checkout.CheakoutFragment"
+        android:label="Cheakout"
+        tools:layout="@layout/fragment_cheakout"/>
+    <fragment
+        android:id="@+id/FullProductsDetailsFragment"
+        android:name="com.example.shopingapp.ui.details.fulldetails.FullProductsDetailsFragment"
+        android:label="FullProductDetails"
+        tools:layout="@layout/fragment_full_product_details">
+        <action
+            android:id="@+id/action_orderFragment_to_orderDetailFragment"
+            app:destination="@id/orderDetailFragment" />
+
+        <argument
+            android:name="qty"
+            app:argType="string" />
+        <argument
+            android:name="rate"
+            app:argType="integer" />
+        <argument
+            android:name="itemid"
+            app:argType="integer" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="brandname"
+            app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+        <!--<action
+            android:id="@+id/action_FullProductsDetailsFragment_to_bagFragment"
+            app:destination="@id/bagFragment" />-->
+        <action
+            android:id="@+id/action_FullProductsDetailsFragment_to_CartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.example.shopingapp.ui.order.orderdetail.OrderDetailFragment"
+        android:label="OrderDetail"
+        tools:layout="@layout/fragment_orderdetail">
+    </fragment>
+
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.example.shopingapp.ui.details.ProductDetailsFragment"
+        tools:layout="@layout/fragment_product_details"
+        android:label="{name}">
+
+    <argument
+        android:name="itemCategoryCode"
+        app:argType="string" />
+    <argument
+        android:name="name"
+        app:argType="string" />
+    <action
+        android:id="@+id/action_productDetailsFragment_to_addOrderFragment"
+        app:destination="@id/orderFragment" />
+        <action
+            android:id="@+id/action_productDetailsFragment_to_FullProductsDetailsFragment"
+            app:destination="@id/FullProductsDetailsFragment" />
+    </fragment>
 </navigation>

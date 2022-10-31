@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="mominData"
+            type="com.example.shopingapp.data.db.table.CartData" />
+
+        <variable
+            name="cartListner"
+            type="com.example.shopingapp.listner.CartListner" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="@dimen/_3sdp"
+            card_view:cardElevation="@dimen/_3sdp"
+            card_view:cardUseCompatPadding="true">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:weightSum="1">
+
+                <ImageView
+                    loadImageFromUrl="@{mominData.imageUrl}"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/image_1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_3sdp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="0.8"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+
+                            android:text="@{mominData.name}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            tools:text="Product name" />
+                        <!--android:text="@{productDetails.name}"-->
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.2"
+                            android:onClick="@{()-> cartListner.deletfromcart(mominData)}"
+                            android:src="@drawable/delete" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@{mominData.brandname}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp"
+                        tools:text="image name" />
+                    <!--android:text="@{productDetails.brandName}"-->
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@{`Price ` + mominData.rate}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp"
+                        tools:text="Price" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@{`Qty ` + mominData.minimumQty}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp"
+                        tools:text="Qty: " />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@{`Min.Qty ` + mominData.minimumQty}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp"
+                        tools:text="Minimum Qty"
+                        android:visibility="gone"/>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:gravity="start"
+                            android:text="@{`Qty ` + mominData.minimumQty}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11ssp"
+                            tools:text="Qty: " />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.6"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:background="@drawable/bg_viewall"
+                                android:padding="@dimen/_2sdp"
+                                android:src="@drawable/ic_remove"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textSize="@dimen/_18ssp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:background="@drawable/bg_viewall"
+                                android:padding="@dimen/_2sdp"
+                                android:src="@drawable/ic_add"
+                                app:tint="@color/white" />
+
+                        </LinearLayout>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Price: 1,500/-"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_gravity="end"
+                        android:textStyle="bold"
+                        tools:text="Total Price: 1,500/-" />
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</layout>

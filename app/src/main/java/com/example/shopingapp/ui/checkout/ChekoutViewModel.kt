@@ -1,4 +1,4 @@
-package com.example.shopingapp.ui.bag
+package com.example.shopingapp.ui.checkout
 
 import android.view.View
 import android.widget.AdapterView
@@ -10,7 +10,7 @@ import com.example.shopingapp.data.repository.SubCategoryRepository
 import com.example.shopingapp.utils.toast
 import javax.inject.Inject
 
-class MyBagsViewModel @Inject constructor(
+class ChekoutViewModel @Inject constructor(
     private val application: MyApplication,
     private val repository: SubCategoryRepository,
 ) : AndroidViewModel(application) {

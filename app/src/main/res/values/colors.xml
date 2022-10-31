@@ -11,4 +11,24 @@
     <color name="gray_unselect_qc_cart">#2D2E35</color>
     <color name="titleColor">#2C2C2C</color>
     <color name="descriptionColor">#929CA3</color>
+    <color name="primary">#0362aa</color>  <!--008CFF-->
+    <color name="primary_light">#0480E4</color>
+    <color name="primary_variant">#008ba3</color>
+    <color name="colorPrimaryDark">#0362aa</color>
+    <color name="secondary">#26c6da</color>
+
+    <color name="product_image_placeholder_color">#E1E1E1</color>
+    <color name="item_value_text_color">#545353</color>
+    <color name="white_color_shade1">#F8F8F8</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="light_gray_new">#EDECEC</color>
+    <color name="dashboard_item_details_bg">#F3F3F3</color>
+    <string name="checkout_lbl_selected_address">Selected Address</string>
+    <color name="color_dim_gray">#696969</color>
+
+    <color name="white_bg">#F5FFFA</color>
+    <color name="peach">#FF6F5E</color>
+    <color name="green">#5DF663</color>
+    <color name="red">#FF1313</color>
+    <color name="light_blue">#B9DEFB</color>
 </resources>

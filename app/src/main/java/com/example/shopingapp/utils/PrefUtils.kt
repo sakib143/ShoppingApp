@@ -11,6 +11,8 @@ import javax.inject.Inject
  */
 @Suppress("unused")
 class PrefUtils @Inject constructor(context: Context) {
+
+    private val appPreference = context.getSharedPreferences(Constant.APP_PREFERENCES, Context.MODE_PRIVATE)
 //    /**
 //     * Object of [android.content.SharedPreferences]
 //     * */

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <import type="android.view.View" />
+
         <variable
             name="mainCategory"
             type="com.example.shopingapp.data.model.MainCategoryModel.Data" />
+
         <variable
             name="mainCategoryListner"
             type="com.example.shopingapp.listner.HomeListner" />
@@ -15,33 +18,41 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_5sdp"
         android:gravity="center"
-        android:onClickListener="@{()-> mainCategoryListner.openSubCategory(mainCategory)}">
+        android:onClickListener="@{()-> mainCategoryListner.openSubCategory(mainCategory)}"
+        android:orientation="vertical">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_cardview">
-
-            <ImageView
-                loadImageFromUrl="@{mainCategory.imagefile}"
+            android:background="@drawable/bg_cardview"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_135sdp"
-                android:padding="@dimen/_5sdp" />
+                android:padding="@dimen/_10sdp"
+                tools:src="@drawable/images_2"
+                android:scaleType="centerCrop"
+                loadImageFromUrl="@{mainCategory.imagefile}"
+                />
 
-        </RelativeLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@{mainCategory.ItemCategoryName}"
-            android:textSize="@dimen/_15ssp"
-            android:textStyle="bold"
-            tools:text="Caps" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@{mainCategory.ItemCategoryName}"
+                android:textSize="@dimen/_15ssp"
+                tools:text="Caps"
+                android:textColor="@color/black"
+                android:padding="@dimen/_3sdp" />
+        </LinearLayout>
+
 
     </LinearLayout>
 
